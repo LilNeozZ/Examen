@@ -9,7 +9,7 @@ public class TestSalaire {
     public void testCalculSalaireJunior() {
         Employee employee = new Employee("Corentin", "Joeffrenet", 1, "Junior");
         EmployeeManager employeeManager = new EmployeeManager();
-        int SalaireSiOK = 20000;
+        int SalaireSiOK = 21000;
         int SalaireReel = employeeManager.calculateSalary(employee);
         assertEquals(SalaireSiOK, SalaireReel);
     }
@@ -17,7 +17,7 @@ public class TestSalaire {
     public void testCalculSalaireIntermediaire() {
         Employee employee = new Employee("Jean", "Test", 5, "Intermédiaire");
         EmployeeManager employeeManager = new EmployeeManager();
-        int SalaireSiOK = 40000;
+        int SalaireSiOK = 50000;
         int SalaireReel = employeeManager.calculateSalary(employee);
         assertEquals(SalaireSiOK, SalaireReel);
     }
@@ -25,7 +25,7 @@ public class TestSalaire {
     public void testCalculSalaireSenior10ans() {
         Employee employee = new Employee("Jean", "Claude", 10, "Senior");
         EmployeeManager employeeManager = new EmployeeManager();
-        int SalaireSiOK = 60000;
+        int SalaireSiOK = 90000;
         int SalaireReel = employeeManager.calculateSalary(employee);
         assertEquals(SalaireSiOK, SalaireReel);
     }
@@ -33,7 +33,7 @@ public class TestSalaire {
     public void testCalculSalaireSenior20ans() {
         Employee employee = new Employee("Jean", "Renée", 20, "Senior");
         EmployeeManager employeeManager = new EmployeeManager();
-        int SalaireSiOK = 90000;
+        int SalaireSiOK = 120000;
         int SalaireReel = employeeManager.calculateSalary(employee);
         assertEquals(SalaireSiOK, SalaireReel);
     }
@@ -41,7 +41,7 @@ public class TestSalaire {
     public void testCalculSalaireSenior50ans() {
         Employee employee = new Employee("Elon", "Musk", 50, "Senior");
         EmployeeManager employeeManager = new EmployeeManager();
-        int SalaireSiOK = 120000;
+        int SalaireSiOK = 210000;
         int SalaireReel = employeeManager.calculateSalary(employee);
         assertEquals(SalaireSiOK, SalaireReel);
     }
